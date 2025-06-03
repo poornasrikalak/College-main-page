@@ -1,0 +1,465 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css"/>
+    <title>GPCET</title>
+    <style>
+	body{
+	background-image:url('home1.jpg');
+ background-repeat: no-repeat;
+ background-size:100% 32%;
+ }
+ th, td{
+ pading:10px;
+ }
+a{
+text-decoration: none;
+font-size:30px;
+}
+a{
+color:lightyellow;
+font-size:30px;
+font-family:"Bell MT";
+}
+h1{
+font-family:"Bellmt";
+font-size:55px;
+color:white;
+}
+#o{
+margin:10px;
+}
+* {box-sizing:border-box}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1000px;
+  position: relative;
+  margin: auto;
+}
+
+/* Hide the images by default */
+.mySlides {
+  display: none;
+}
+
+/* Next & previous buttons */
+.prev, .next {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;
+  margin-top: -22px;
+  padding: 16px;
+  color: white;
+  font-weight: bold;
+  font-size: 18px;
+  transition: 0.6s ease;
+  border-radius: 0 3px 3px 0;
+  user-select: none;
+}
+
+/* Position the "next button" to the right */
+.next {
+  right: 0;
+  border-radius: 3px 0 0 3px;
+}
+
+/* On hover, add a black background color with a little bit see-through */
+.prev:hover, .next:hover {
+  background-color: rgba(0,0,0,0.8);
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}
+.dot {
+  cursor: pointer;
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: white;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@keyframes fade {
+  from {opacity: .4}
+  to {opacity: 1}
+}
+* {
+      margin: 0;
+      padding: 0;
+      font-family: "montserrat", sans-serif;
+    }
+
+
+    /* --- Add this CSS --- */
+    .social-buttons {
+      position: absolute;
+      right: 1rem;
+      top: 10rem;
+      display: flex;
+      flex-direction: column;
+    }
+    .social-buttons a {
+      display: inline-flex;
+      text-decoration: none;
+      font-size: 28px;
+      width: 60px;
+      height: 60px;
+      color: white;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin: 4px 0;
+    }
+
+p{
+font-size:20px;
+font-family:bellmt;
+}
+
+    .social-buttons a::before {
+      content: "";
+      position: absolute;
+      width: 80px;
+      height: 80px;
+      background: linear-gradient(white, white, );
+      border-radius: 80%;
+      z-index: -1;
+      transition: 0.3s ease-in;
+    }
+
+    .social-buttons a:hover::before {
+      transform: scale(0);
+    }
+
+    .social-buttons a i {
+      transition: 0.3s ease-in;
+    }
+
+    .social-buttons a:hover i {
+      background: linear-gradient(white, white, white);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: white;
+      transform: scale(2.2);
+    }
+	a:active {
+  color: lightblue;
+}
+a:hover {
+  font-size:250%;
+}
+a:hover::before {
+  transform-origin: left;
+  transform: scaleX(1);
+}
+a::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 4px;
+    border-radius: 4px;
+    background-color: #80e5ff;
+    bottom: 0;
+    left: 0;
+    transform-origin: right;
+    transform: scaleX(0);
+    transition: transform .3s ease-in-out;
+  }a {
+  position: relative;
+}
+.navbar {
+  overflow:hidden;
+  background-color:#A0A0A0;
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+div.ff {
+  margin: 30px;
+  background-color: #ffffff;
+  border: 1px solid black;
+  opacity: 0.6;
+}
+#gg{
+padding:50px;
+align:center;
+}
+#kk{
+padding:30px;
+
+}
+.image-scroll-container {
+  width: 100%;
+  overflow-x: auto;
+  white-space: nowrap;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+
+.image-container {
+  display: inline-block;
+  margin-right: 10px;
+  animation: scrollAnimation 20s linear infinite;
+}
+.image-container img {
+  max-width: 100%;
+  height: auto;
+}
+
+.caption {
+  margin-top: 5px;
+  font-size: 20px;
+}
+@keyframes scrollAnimation {
+  5% { transform: translateX(5); }
+  100% { transform: translateX(-100%); }
+}
+marquee{
+loop:3;
+behaviour:scroll;
+}
+ </style>
+</head>
+<body>
+
+<header >
+<div class=navbar>
+<table align=right >
+<tr>
+<br><br>
+<td><a href="#home" id=ss  align=right style="margin-right:18px;">Home</a></td>
+            <td><a href="#admissions" class=1 style="margin-right:18px;" id=ss  align=right>About Us</a></td>
+            <td><a href="#academics"  id=ss  align=right style="margin-right:18px;">Academics</a></td>
+            <td><a href="#campus-life"  id=ss  align=right style="margin-right:18px;">Department</a>
+			</td>
+            <td><a href="#news-events"  id=ss align=right style="margin-right:18px;">Research</a></td>
+			<td><a href=studentresearch.html  id=ss align=right style="margin-right:18px;">Student Resource</a></td>
+            <td><a href="#contact" id=ss align=right>Contact Us</a></td>
+			</td>
+			</tr>
+			</table>
+</div>
+</header>
+<br>
+<br><br><br>
+<table>
+<tr>
+<td>
+<img src="logo.jpg" width=80%>
+</td>
+<td>
+<h1 style="font-family:bellmt;font-size:55px;color:white;" align=center id=o>G.Pullaiah College of Engineering And Technology (Autonomous)</h1>
+<p style="font-family:Bellmt;font-size:45px;color:white;" align=center>Pionnering Innovative Education</p>
+</td>
+</tr>
+</table>
+</header>
+<br>
+<br>
+<br>
+<div class="social-buttons">
+      <a href="https://www.facebook.com/gpcetofficial/"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.youtube.com/@gpcetyoutube"><i class="fab fa-youtube"></i></a>
+      <a href="https://twitter.com/i/flow/login?redirect_after_login=%2Fgpcetofficial"><i class="fab fa-twitter"></i></a>
+      <a href="https://in.linkedin.com/posts/g-pullaiah-college-of-engineering-and-technology-autonomous-kurnool-a17778248_ai-training-tech-activity-7031064068807434240-V1cG"><i class="fab fa-linkedin-in"></i></a>
+      <a href="https://www.instagram.com/gpcetofficial/"><i class="fab fa-instagram"></i></a>
+    </div>
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 6</div>
+    <img src="welcome1.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 6</div>
+    <img src="elevation1.jpg" style="width:110%">
+    <div class="text">Caption Text</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 6</div>
+    <img src="lib.jpg" style="width:100%">
+    <div class="text">Caption Two</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">4 / 6</div>
+    <img src="prinicipal.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  
+  <div class="mySlides fade">
+    <div class="numbertext">5 / 6</div>
+    <img src="place.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+  <div class="mySlides fade">
+    <div class="numbertext">6 / 6</div>
+    <img src="place.jpg" style="width:100%">
+    <div class="text">Caption Three</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+  <span class="dot" onclick="currentSlide(4)"></span>
+  <span class="dot" onclick="currentSlide(5)"></span>
+</div>
+<script>
+let slideIndex = 1;
+showSlides(slideIndex);
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  let i;
+  let slides = document.getElementsByClassName("mySlides");
+  let dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+} 
+</script>
+<br><br><br><br><br>
+<div>
+<table>
+<br><br>
+<marquee>
+<img src="acc.jpg" width=15%>
+<img src="acc1.jpg" width=15%>
+<img src="acc2.jpg" width=15%>
+<img src="acc3.jpg" width=15%>
+<img src="acc4.jpg" width=15%>
+<img src="acc5.jpg" width=15%>
+<img src="acc6.jpg" width=15%>
+<img src="acc7.jpg" width=15%>
+<img src="acc8.jpg" width=15%>
+<img src="acc9.jpg" width=15%>
+</marquee><br>
+<h1 align=center id=home style='font-size:45px; color:grey;'>WELCOME TO GPCET</h1>
+<br>
+<marquee style='font-size:25px; color:white; background-color:grey;'>Accredited by NAAC with A Grade CIV, CSE, ECE & EEE NBA Accredited approved by AICTE and Affiliated to JNTUA</marquee>
+<br><br><br>
+<tr>
+<td>
+<img src="page1.jpg" width=525px>
+</td>
+<td>
+<p>
+G.Pullaiah College of Engineering and Technology (GPCET) is promoted by Sri Sai Krishna Educational Society, a society registered on 15-02-2006 under A.P Societies Registration Act No 35 of 2001 and is the dream project of renowned educationalist Sri G.Pullaiah and his son Sri G.V.M Mohan Kumar. The college is located in a hamlet Venkayapalli, within a close proximity from Kurnool on the state highway and is well connected to all major cities in and around the state. The College established in the year 2007, works with the Motto “Pioneering Innovative Education” and strives to provide the student community, the modern technology supported by Comprehensive library, State of art laboratories along with necessary computational Skills. GPCET has obtained Autonomous status from the year 2018 besides being accredited by NAAC of UGC and NBA of AICTE, New Delhi. GPCET is approved by AICTE, New Delhi and has also been granted permanent affiliation under Jawaharlal Nehru Technological University Ananthapur. Also it is an ISO 9001-2015 certified Institution besides recognized by UGC under 2(f) and 12(B). It offers 6 UG programs in Civil Engineering (CE), Computer Science and Engineering (CSE), Electronics and Communication Engineering (ECE), Electrical and Electronics Engineering (EEE), Mechanical Engineering (ME), Computer Science Engineering-Artificial Intelligence (CSE-AI)  besides 4 PG programs in Computer Science and Engineering (CSE), Digital Electronics and Communication Systems (DECS), Electrical Power Systems (EPS) and Master of Business Administration (MBA) with a total annual intake of 918. 
+</td>
+</tr>
+</table>
+</div>
+<br>
+<br>
+<br>
+<pre style="font-family:Bellmt;font-size:55px;color:grey;" align=center>Courses offered</pre>
+<br>
+<br>
+<pre style="font-family:Bellmt;font-size:45px;color:grey;" align=center>Under Graduation Programmes</pre>
+<center>
+<table>
+<tr>
+<td align=center>
+<img src="icon3.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon4.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon5.jpg" width=80% id=gg align=center>
+</td>
+</tr>
+</table>
+</center>
+<center>
+<table>
+<tr>
+<td align=center>
+<img src="icon8.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon6.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon7.jpg" width=80% id=gg align=center>
+</td>
+</tr>
+</table>
+</center>
+<h2 align=center style="font-family:Bellmt;font-size:45px;color:grey;">Post Graduation Programmes</h2>
+<center>
+<table>
+<tr>
+<td align=center>
+<img src="icon9.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon10.jpg" width=80% id=gg align=center>
+</td>
+</tr>
+</table>
+</center>
+<center>
+<table>
+<tr>
+<td align=center>
+<img src="icon11.jpg" width=80% id=gg align=center>
+</td>
+<td align=center>
+<img src="icon12.jpg" width=80% id=gg align=center>
+</td>
+</tr>
+</table>
+</center>
+</html>
